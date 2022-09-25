@@ -17,7 +17,7 @@ let imageLightBox = new SimpleLightbox('.gallery a', {
 
 function galleryItemsMarkup(gallery) {
     return galleryItems.map(({ preview, original, description }) =>
-        ` <a class="gallery__item" loading="lazy" href="${original}">
+        ` <a class="gallery__item" href="${original}">
             <img class="gallery__image" loading="lazy" src="${preview}" alt="${description}" />
         </a> `)
         .join('');
